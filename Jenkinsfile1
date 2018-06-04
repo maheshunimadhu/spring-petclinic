@@ -3,6 +3,7 @@ node{
      git 'https://github.com/maheshunimadhu/spring-petclinic'
      }
    stage('Compile-Package')
+   def mvnHome = tool name: 'maven3.5.3', type: 'Maven'
      sh 'mvn package'
      }
      
